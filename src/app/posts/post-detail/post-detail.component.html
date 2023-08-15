@@ -1,0 +1,22 @@
+<div class="post-detail">
+  <a routerLink="/posts" class="post-detail_back">
+    <mat-icon>keyboard_arrow_left</mat-icon> Back to main page</a
+  >
+  <div *ngIf="currentPost && currentUser && currentComments">
+    <h1>{{ currentPost.title }}</h1>
+    <p class="post-detail_name">{{ currentUser.name }}</p>
+    <p>{{ currentPost.body }}</p>
+    <p class="post-detail_comments-header">Comments:</p>
+    <ng-container>
+      <mat-card *ngFor="let comment of currentComments">
+        <mat-card-header>
+          <mat-card-title>{{ comment.name }}</mat-card-title>
+          <mat-card-subtitle>{{ comment.email }}</mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+          <p>{{ comment?.body }}</p>
+        </mat-card-content>
+      </mat-card>
+    </ng-container>
+  </div>
+</div>

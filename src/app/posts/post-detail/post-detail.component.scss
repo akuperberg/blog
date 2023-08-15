@@ -1,0 +1,23 @@
+.post-detail {
+  padding: 20px 50px;
+
+  &_name {
+    color: rgba(0, 0, 0, 0.54);;
+  }
+
+  .post-detail_back {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #278ea8;
+    transition: color 0.2s;
+    &:hover {
+      color: #1d6b7f;
+    }
+  }
+
+  .post-detail_comments-header {
+    font-weight: bold;
+  }
+}
