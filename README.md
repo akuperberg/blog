@@ -1,2 +1,2 @@
 # blog
-Very simple blog app with placeholder values.
+Simple Angular blog app with placeholder values from jsonplaceholder.typicode.
